@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Correct Keyboard - NLP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Auto Correct Keyboard</h1>
+</header>
+
+<main>
+    <div class="container">
+
+        <div class="enter-section">
+            <input type="text" id="inputText" placeholder="Please enter text">
+            <button onclick="checkText()">Check</button>
+        </div>
+
+        <div class="suggest-section">
+            <h3>Suggested Correction</h3>
+            <input type="text" id="outputText" readonly placeholder="Corrected text will appear here">
+            <p class="confidence">
+                Confidence: <span id="confidenceValue">--%</span>
+            </p>
+        </div>
+
+    </div>
+</main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

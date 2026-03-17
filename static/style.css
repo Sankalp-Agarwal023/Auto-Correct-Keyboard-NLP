@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+        url("https://images.unsplash.com/photo-1535223289827-42f1e9919769");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: #00f5ff;
+}
+
+.container {
+    margin-top: 60px;
+    width: 600px;
+    max-width: 90%;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+}
+
+.enter-section {
+    display: flex;
+    gap: 15px;
+}
+
+.enter-section input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #00f5ff;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.enter-section button {
+    padding: 14px 25px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    background: linear-gradient(45deg, #00f5ff, #6a00ff);
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+.enter-section button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00f5ff;
+}
+
+.suggest-section {
+    margin-top: 30px;
+}
+
+.suggest-section input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #00f5ff;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.confidence {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#confidenceValue {
+    color: #00f5ff;
+    font-weight: bold;
+}
